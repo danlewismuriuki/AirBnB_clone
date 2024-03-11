@@ -3,6 +3,7 @@
 
 import cmd
 
+
 class HBNBCommand(cmd.Cmd):
     """Command interpreter for HBNB project"""
 
@@ -16,10 +17,11 @@ class HBNBCommand(cmd.Cmd):
         """Exit the program when EOF is reached"""
         print()
         return True
-    
+
     def emptyline(self):
         """Do nothing when an empty line is entered"""
         pass
+
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
